@@ -1,0 +1,196 @@
+/* ===============================
+   GLOBAL RESET & THEME
+================================ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: #0f172a; /* Dark SOC background */
+  color: #e5e7eb;
+}
+
+/* ===============================
+   HEADER
+================================ */
+.header {
+  background-color: #020617;
+  padding: 16px 24px;
+  border-bottom: 1px solid #1e293b;
+}
+
+.header h1 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #f8fafc;
+}
+
+/* ===============================
+   MAIN LAYOUT
+================================ */
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* ===============================
+   SIDEBAR (INCIDENT LIST)
+================================ */
+.sidebar {
+  width: 22%;
+  background-color: #020617;
+  padding: 16px;
+  border-right: 1px solid #1e293b;
+}
+
+.sidebar h2 {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #cbd5f5;
+}
+
+.incident-item {
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 14px;
+}
+
+.incident-item strong {
+  display: block;
+  font-weight: 600;
+}
+
+.incident-item span {
+  font-size: 12px;
+  opacity: 0.85;
+}
+
+/* Severity colors */
+.incident-item.high {
+  background-color: #7f1d1d;
+}
+
+.incident-item.medium {
+  background-color: #78350f;
+}
+
+.incident-item.low {
+  background-color: #14532d;
+}
+
+.incident-item:hover {
+  transform: translateX(3px);
+  opacity: 0.95;
+}
+
+/* ===============================
+   INCIDENT DETAILS PANEL
+================================ */
+.incident-details {
+  width: 38%;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.incident-details h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #e0e7ff;
+}
+
+.incident-details p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.incident-details b {
+  color: #f8fafc;
+}
+
+/* Anomaly score highlight */
+.incident-details .score {
+  font-size: 22px;
+  font-weight: 700;
+  color: #38bdf8;
+}
+
+/* ===============================
+   LLM PANEL (INTELLIGENCE)
+================================ */
+.llm-panel {
+  width: 40%;
+  padding: 20px;
+  background-color: #020617;
+  border-left: 1px solid #1e293b;
+  overflow-y: auto;
+}
+
+.llm-panel h2 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #c7d2fe;
+}
+
+.llm-panel h3 {
+  font-size: 15px;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  color: #a5b4fc;
+}
+
+.llm-panel p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.llm-panel ul {
+  list-style: disc;
+  padding-left: 18px;
+}
+
+.llm-panel li {
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+/* Confidence badge */
+.confidence {
+  display: inline-block;
+  padding: 4px 8px;
+  background-color: #1d4ed8;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-left: 6px;
+}
+
+/* ===============================
+   SCROLLBAR (SUBTLE)
+================================ */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #334155;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
