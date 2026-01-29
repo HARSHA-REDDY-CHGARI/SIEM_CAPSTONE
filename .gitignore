@@ -1,0 +1,27 @@
+# Environment variables
+.env
+.env.*
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.envvenv/
+.venv/
+
+# Node / frontend
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+# Datasets
+data/raw/*.csv
+
+# Generated model artifacts
+models/*.json
+models/*.pkl
